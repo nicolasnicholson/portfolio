@@ -31,29 +31,23 @@ function timeSince(dateStr) {
 ---
 
 <section id="cases" class="sm:p-15 px-15 py-10">
-  <h2 class="font-bold text-start text-4xl sm:text-5xl py-20">expe<span class="border-b-6 border-black pb-0.5">rience</span></h2>
+  <h2 class="font-bold text-start text-3xl sm:text-4xl py-20">expe<span class="border-b-6 border-black pb-0.5">rience</span></h2>
   <div class="flex justify-center">
-    <ol class="relative border-s-4 border-black/20 px-10 py-4 max-w-2xl">
+    <ol class="relative border-s-4 border-black/20 px-4 py-4 sm:px-10 max-w-full sm:max-w-2xl break-words">
       {experience.map(exp => (
-        <li class="mb-16 ms-6">
-          <span class="absolute -start-3 flex items-center justify-center w-6 h-6 bg-black rounded-full ring-4 ring-white"></span>
-          <h3 class="font-bold text-2xl">{exp.title}</h3>
+        <li class="mb-8 sm:mb-16 ms-6">
+          <span class="absolute -start-3 flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 bg-black rounded-full ring-4 ring-white"></span>
+          <h3 class="font-bold text-lg sm:text-2xl break-words">{exp.title}</h3>
           {exp.company === null ? (
-            <h3 class="text-lg text-gray-400 italic">Sin compañía</h3>
+            <h3 class="text-base sm:text-lg text-gray-400 italic break-words">Sin compañía</h3>
           ) : (exp.company.link ? (
-            <a href={exp.company.link} target="_blank" class="text-lg font-semibold flex gap-2" style={`color: ${exp.company.color ? exp.company.color : '#2563eb'}`}>{exp.company.name} <UrlLink /></a>
+            <a href={exp.company.link} target="_blank" class="text-base sm:text-lg font-semibold flex gap-2 break-words" style={`color: ${exp.company.color ? exp.company.color : '#2563eb'}`}>{exp.company.name} <UrlLink /></a>
           ) : (
-            <h3 class="text-lg text-gray-700">{exp.company.name}</h3>
+            <h3 class="text-base sm:text-lg text-gray-700 break-words">{exp.company.name}</h3>
           ))}
-          <span class="block text-sm text-gray-500 mb-2">
-            {formatDate(exp.start)} - {exp.end ? formatDate(exp.end) : "Actualidad"}
-            {!exp.end && (
-              <span class="ml-2 text-gray-900">{timeSince(exp.start)}</span>
-            )}
-          </span>
           <ul class="list-disc pl-5 mb-2">
             {exp.characteristics.map(carac => (
-              <li class="text-lg text-gray-700">{carac}</li>
+              <li class="text-base sm:text-lg text-gray-700 break-words">{carac}</li>
             ))}
           </ul>
         </li>

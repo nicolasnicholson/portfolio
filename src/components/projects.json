@@ -6,7 +6,7 @@
     "tecnologias": ["Next.js", "TypeScript", "TailwindCSS", "Zustand", "Supabase", "shadcn/ui", "i18next", "react-markdown"],
     "imagen": "./projects/notter-app.png",
     "alt": "Notter App",
-    "descripcion": "Aplicación del clima con React y Tailwind, consumo de la API de OpenWeatherMap."
+    "descripcion": "Aplicación de notas con Next.js, TypeScript y Tailwind, permite crear, editar y eliminar notas con almacenamiento en Supabase."
   },
   {
     "nombre": "Disney+ Clone",
@@ -15,7 +15,7 @@
     "tecnologias": ["React", "Redux", "Firebase", "Styled Components"],
     "imagen": "./projects/disney-clone.png",
     "alt": "Disney+ Clone",
-    "descripcion": "Clon de Disney+ con autenticación, base de datos en Firebase y diseño responsive."
+    "descripcion": "Clon de Disney+ hecho con React y Tailwind, incluye navegación, autenticación con Firebase y consumo de contenido multimedia."
   },
   {
     "nombre": "Julierauque E-Commerce",
@@ -24,7 +24,7 @@
     "tecnologias": ["Next.js", "TypeScript", "TailwindCSS"],
     "imagen": "./projects/ecommerce.png",
     "alt": "Julierauque E-Commerce",
-    "descripcion": "Aplicación de comercio electrónico con JavaScript y Tailwind, consumo de la API de Pexels."
+    "descripcion": "Tienda online de perfumes hecha con Next.js, TypeScript y Tailwind, con carrito de compras y pasarela de pago integrada."
   },
   {
     "nombre": "Weather App",
@@ -33,7 +33,7 @@
     "tecnologias": ["React", "TypeScript", "TailwindCSS", "OpenWeatherMap API", "Zustand", "i18next"],
     "imagen": "./projects/weather-app.png",
     "alt": "Weather App",
-    "descripcion": "Aplicación del clima con React y Tailwind, consumo de la API de OpenWeatherMap."
+    "descripcion": "App del clima con React, TypeScript y Tailwind, que consume la API de OpenWeatherMap para mostrar el pronóstico actual."
   },
   {
     "nombre": "Image Search",
@@ -42,6 +42,6 @@
     "tecnologias": ["Vanilla JavaScript", "TailwindCSS", "Pexels API"],
     "imagen": "./projects/image-search.png",
     "alt": "Image Search",
-    "descripcion": "Aplicación de búsqueda de imágenes con JavaScript y Tailwind, consumo de la API de Pexels."
+    "descripcion": "Buscador de imágenes con JavaScript Vanilla, utilizando la API de Pexels para mostrar resultados dinámicos."
   }
 ]
