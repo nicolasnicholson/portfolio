@@ -1,0 +1,36 @@
+---
+export interface Props {
+  nombre: string;
+  link_sitio: string;
+  link_repositorio: string;
+  tecnologias: string[];
+  imagen: string;
+  alt: string;
+  descripcion: string;
+}
+const { nombre, link_sitio, link_repositorio, tecnologias, imagen, alt, descripcion } = Astro.props;
+---
+<article class="flex flex-col sm:flex-row gap-10">
+    <div class="sm:w-96">
+        <img class="w-full h-auto object-contain rounded-lg" src={imagen} alt={alt} />
+    </div>
+
+    <div class="flex flex-col gap-5">
+        <h3 class="font-semibold text-2xl">{nombre}</h3>
+        <p class="text-gray-600 sm:w-96">{descripcion}</p>
+        <div class="flex flex-wrap gap-2">
+          {(Array.isArray(tecnologias) ? tecnologias : []).map(tech => (
+            <span class="bg-gray-200 text-xs px-2 py-1 rounded">{tech}</span>
+          ))}
+        </div>
+        <div class="flex gap-3">
+
+          <a target="_blank" class="text-xl font-semibold relative inline-block hover:text-gray-700" href={link_sitio}>
+            <span class="border-b-2 border-black pb-0.5">ver</span> proyecto
+          </a>
+          <a target="_blank" class="text-xl font-semibold relative inline-block hover:text-gray-700" href={link_repositorio}>
+            <span class="border-b-2 border-black pb-0.5">repo</span>
+          </a>
+        </div>
+    </div>
+</article>

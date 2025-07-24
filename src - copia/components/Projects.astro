@@ -1,0 +1,10 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+import projects from "./projects.json";
+---
+import ProjectsList from "./ProjectsList.jsx";
+
+<section id="projects" class="sm:p-15 px-15 py-10">
+	<h2 class="font-bold text-end text-4xl sm:text-5xl py-20">personal <span class="border-b-6 border-black pb-0.5">projects</span></h2>
+	<ProjectsList client:visible projects={projects} />
+</section>

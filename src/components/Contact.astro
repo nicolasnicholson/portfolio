@@ -1,0 +1,45 @@
+<section id="contact" class="sm:p-15 px-15 py-0">
+    <h2 class="font-bold text-4xl sm:text-5xl py-20 text-center">
+        contact <span class="border-b-6 border-black pb-0.5">me</span>
+    </h2>
+    <form class="max-w-xl mx-auto flex flex-col gap-6 bg-white border border-gray-300 p-8 rounded-lg">
+        <div class="flex flex-col gap-2">
+            <label for="name" class="font-semibold">Nombre</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black transition"
+                placeholder="Tu nombre"
+            />
+        </div>
+        <div class="flex flex-col gap-2">
+            <label for="email" class="font-semibold">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black transition"
+                placeholder="tu@email.com"
+            />
+        </div>
+        <div class="flex flex-col gap-2">
+            <label for="message" class="font-semibold">Mensaje</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black transition resize-none"
+                placeholder="Escribí tu mensaje..."
+            ></textarea>
+        </div>
+        <button
+            type="submit"
+            class="bg-black text-white font-bold py-3 rounded-lg hover:bg-gray-900 transition cursor-pointer"
+        >
+            Enviar mensaje
+        </button>
+    </form>

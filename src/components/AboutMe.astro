@@ -1,0 +1,57 @@
+---
+import UrlLink from "./icons/UrlLink.astro";
+import Mail from "./icons/Mail.astro";
+import Layout from "./icons/Layout.astro";
+import Brackets from "./icons/Brackets.astro";
+import Database from "./icons/Database.astro";
+import Atom from "./icons/Atom.astro";
+---
+
+<section id="about" class="sm:p-15 px-15 py-10">
+    <h2 class="font-bold text-4xl sm:text-5xl py-20"><span class="border-b-6 border-black pb-0.5">about</span> me</h2>
+
+    <div class="flex gap-20 justify-start items-center">
+    <img class="hidden sm:block w-64 h-64 object-cover rounded-full border-white" src="./me.jpg" alt="Foto de Nicolás Nicholson" loading="eager" decoding="async" />
+    <div class="flex flex-col gap-5">
+        <h3 class="font-bold text-4xl">Nicolás Nicholson</h3>
+        <p class="sm:w-[600px] sm:text-lg">Experiencia en el desarrollo de <strong>interfaces modernas</strong>, <strong>optimizadas</strong> y <strong>escalables</strong>. Especializado en tecnologías como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> y frameworks como <strong>React</strong>.</p>
+        <p class="sm:w-[600px] sm:text-lg">Desempeño en <strong>múltiples proyectos freelance</strong>, creando <strong>soluciones eficientes</strong> y centradas en la <strong>experiencia del usuario</strong>. Apasionado por la <strong>performance</strong>, la <strong>accesibilidad</strong> y las <strong>mejores prácticas</strong> en desarrollo web. Actualmente lidero <a href="https://ardianstudio.site" target="_blank" class="text-[#0000ff] hover:underline font-semibold">Ardian Studio</a>, mi estudio de Desarrollo Web, donde potencio la creatividad y la innovación digital.</p>
+        <div class="flex gap-3">
+            <a class="flex gap-2 font-medium transition-colors hover:text-gray-600" target="_blank" href="https://www.linkedin.com/in/nicolasnicholson/"><UrlLink /> LINKEDIN</a>
+            <a class="flex gap-2 font-medium transition-colors hover:text-gray-600" target="_blank" href="https://github.com/nicolasnicholson"><UrlLink /> GITHUB</a>
+            <a class="flex gap-2 font-medium transition-colors hover:text-gray-600" target="_blank" href="mailto:nicolas@example.com"><Mail /> EMAIL</a>
+        </div>
+    </div>
+    </div>
+
+     <div class="flex flex-col sm:justify-start sm:items-start justify-center items-center sm:flex-row gap-5 mt-20">
+        <div class="border border-gray-300 px-5 py-2 rounded-lg flex gap-5 justify-center items-center">
+            <Layout />
+            <div class="border-l pl-5 border-l-black">
+                <h4 class="font-bold text-xl">Interface & Design</h4>
+                <p>UI reutilizable, accesible y escalable</p>
+            </div>
+        </div>
+        <div class="border border-gray-300 px-5 py-2 rounded-lg flex gap-5 justify-center items-center">
+            <Brackets />
+            <div class="border-l pl-5 border-l-black">
+                <h4 class="font-bold text-xl">HTML & CSS</h4>
+                <p>Interfaces responsive y optimizadas</p>
+            </div>
+        </div>
+        <div class="border border-gray-300 px-5 py-2 rounded-lg flex gap-5 justify-center items-center">
+            <Atom />
+            <div class="border-l pl-5 border-l-black">
+                <h4 class="font-bold text-xl">React.js</h4>
+                <p>SPAs rápidas y modulares con React.</p>
+            </div>
+        </div>
+        <div class="border border-gray-300 px-5 py-2 rounded-lg flex gap-5 justify-center items-center">
+            <Database />
+            <div class="border-l pl-5 border-l-black">
+                <h4 class="font-bold text-xl">Backend</h4>
+                <p>Auth y bases de datos con Firebase/Supabase.</p>
+            </div>
+        </div>
+     </div>
+</section>

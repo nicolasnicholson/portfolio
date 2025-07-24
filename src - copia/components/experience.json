@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Founder & Web Developer",
+    "company": {
+      "name": "Ardian Studio",
+      "link": "https://ardianstudio.site",
+      "color": "#0000FF"
+    },
+    "start": "2023-02-01",
+    "end": null,
+    "characteristics": [
+        "Desarrollo de aplicaciones web modernas y funcionales con React, JavaScript y TypeScript.",
+        "Creación de interfaces atractivas, responsivas y optimizadas con Tailwind CSS, SASS y Shadcn UI.",
+        "Gestión del estado eficiente con Zustand.",
+        "Control de versiones y trabajo colaborativo con Git.",
+        "Experiencia en soluciones backend utilizando Firebase y Supabase.",
+        "Integración y manejo de bases de datos SQL, MySQL, PostgreSQL y MongoDB.",
+        "Enfoque en la escalabilidad, la performance y la experiencia del usuario.",
+        "Compromiso con la calidad del producto, la comunicación y las necesidades del cliente en cada proyecto."
+    ]
+    
+  },
+  {
+    "title": "Freelance Frontend Developer",
+    "company": {
+      "name": "Fiverr",
+      "link": "https://es.fiverr.com/",
+      "color": "#1DBF73"
+    },
+    "start": "2022-02-01",
+    "end": "2023-02-01",
+    "characteristics": [
+      "Desarrollo de interfaces web modernas y responsivas para clientes internacionales.",
+      "Implementación de soluciones personalizadas con React, JavaScript y TypeScript.",
+      "Optimización de la experiencia de usuario y performance en proyectos freelance.",
+      "Integración de APIs y manejo de datos dinámicos en aplicaciones frontend.",
+      "Aplicación de buenas prácticas de accesibilidad y SEO.",
+      "Colaboración y comunicación efectiva con clientes y equipos remotos.",
+      "Control de versiones y despliegue continuo usando Git y plataformas cloud.",
+      "Adaptación a requerimientos cambiantes y entrega de productos de alta calidad."
+    ]
+    
+  }
+]

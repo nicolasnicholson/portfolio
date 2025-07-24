@@ -1,0 +1,81 @@
+<header class="h-screen p-4 sm:p-15 bg-white">
+    <div class="flex flex-row sm:block items-center justify-between">
+        <h2 class="text-3xl sm:text-4xl font-bold">nicolás nicholson.</h2>
+        <button id="menu-btn" class="sm:hidden flex items-center px-3 py-2 rounded text-black ml-2" onclick="document.getElementById('mobile-nav').classList.toggle('hidden')">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+
+    <div class="flex sm:flex-row flex-col h-full w-full items-center justify-between">
+        <div class="flex flex-col justify-center items-start h-full">
+            <header>
+                <nav>
+                    <ul class="hidden sm:flex flex-col-reverse gap-3 items-center mt-6">
+                        <a class="writing-vertical-lr tracking-wider transition-colors hover:text-gray-600" href="#contact">contact</a>
+                        <a class="writing-vertical-lr tracking-wider transition-colors hover:text-gray-600" href="#about">about me</a>
+                        <a class="writing-vertical-lr tracking-wider transition-colors hover:text-gray-600" href="#projects">projects</a>
+                        <a class="writing-vertical-lr tracking-wider transition-colors hover:text-gray-600" href="#cases">cases</a>
+                        <a class="writing-vertical-lr font-medium tracking-wider transition-colors hover:text-gray-600" href="#home"><span class="border-r-2 border-black pr-1">home</span></a>
+                    </ul>
+                    <ul id="mobile-nav" class="fixed top-0 left-0 w-full h-full bg-white z-50 flex flex-col items-center justify-center gap-8 sm:hidden hidden">
+                        <button class="absolute top-6 right-6 p-2" onclick="document.getElementById('mobile-nav').classList.add('hidden')" aria-label="Cerrar menú">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                        <a class="text-2xl font-semibold" href="#home">home</a>
+                        <a class="text-2xl font-semibold" href="#cases">cases</a>
+                        <a class="text-2xl font-semibold" href="#projects">projects</a>
+                        <a class="text-2xl font-semibold" href="#about">about me</a>
+                        <a class="text-2xl font-semibold" href="#contact">contact</a>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <h1 class="text-3xl sm:text-5xl font-bold text-center typewriter pointer-events-auto">
+                front-end.web(developer)_
+            </h1>
+        </div>
+    </div>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .writing-vertical-lr {
+            writing-mode: sideways-lr;
+            text-orientation: mixed;
+        }
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3.5s steps(30, end) 1s 1 normal both, blink-caret .75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #000; }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileNav = document.getElementById('mobile-nav');
+            const navLinks = mobileNav.querySelectorAll('a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileNav.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</header>
