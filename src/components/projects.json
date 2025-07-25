@@ -18,12 +18,12 @@
     "descripcion": "Clon de Disney+ hecho con React y Tailwind, incluye navegación, autenticación con Firebase y consumo de contenido multimedia."
   },
   {
-    "nombre": "Julierauque E-Commerce",
+    "nombre": "Julieraque E-Commerce",
     "link_sitio": "https://julierauque-shop.vercel.app/",
     "link_repositorio": "https://github.com/nicolasnicholson/julierauque-shop",
     "tecnologias": ["Next.js", "TypeScript", "TailwindCSS"],
     "imagen": "./projects/ecommerce.png",
-    "alt": "Julierauque E-Commerce",
+    "alt": "Julieraque E-Commerce",
     "descripcion": "Tienda online de perfumes hecha con Next.js, TypeScript y Tailwind, con carrito de compras y pasarela de pago integrada."
   },
   {
